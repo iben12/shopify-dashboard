@@ -99,7 +99,13 @@ iframe {
 }
 
 .codeship .project h2 {
+  font-size: 2rem;
   margin: 0;
+}
+
+.codeship .project span {
+  font-size: 1.5rem;
+  margin: .5rem;
 }
 
 .project.waiting {
@@ -120,7 +126,9 @@ iframe {
 }
 
 .project.failed, .project.error {
-  background-color: rgb(186, 26, 26);
+  background-image: url(/explode.gif);
+  background-size: cover;
+  background-position: center center;
   color: white;
 }
 
