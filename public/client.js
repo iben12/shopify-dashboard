@@ -17,8 +17,17 @@ function getStatuses() {
     });
 }
 
+function refreshRabbit() {
+    let rabbitIframe = document.getElementById("rabbitiframe");
+    rabbitIframe.contentWindow.location(reload);
+}
+
 getStatuses();
 
 setInterval(function() {
     getStatuses();
 }, 20 * 1000);
+
+setInterval(function() {
+    refreshRabbit();
+}, 30 * 60 * 1000);
