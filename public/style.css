@@ -1,0 +1,133 @@
+html,
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 10px;
+}
+
+.container > div {
+  overflow: hidden;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 0;
+}
+
+.cd-dashboard {
+  grid-column: 1 / 6;
+  grid-row: 1 / 3;
+}
+
+.logmatic {
+  grid-column: 1 / 11;
+  grid-row: 1 / 6;
+}
+
+.rabbit {
+  grid-column: 1/4;
+  grid-row: 6 / 11;
+  background: white;
+}
+
+.librato {
+  grid-column: 4 / 8;
+  grid-row: 6 / 11;
+}
+
+.librato iframe {
+  transform: scale(0.6);
+  width: 159%;
+  height: 167%;
+}
+
+.cdd {
+  grid-column: 8 / 11;
+  grid-row: 8 / 11;
+}
+
+.codeship {
+  background: none;
+  grid-column: 8 /11;
+  grid-row: 6 / 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.codeship .status {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.codeship .title {
+  background-color: #313a44;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  flex-grow: 0;
+}
+
+.codeship .title img {
+  height: 30px;
+}
+
+.codeship .project {
+  flex-grow: 0;
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: rgb(198, 198, 198);
+  color: #a1a1a1;
+}
+
+.codeship .project h2 {
+  margin: 0;
+}
+
+.project.waiting {
+  background-color: rgb(165, 234, 255);
+  color: #114674;
+}
+
+.project.testing {
+  background-color: rgb(24, 125, 196);
+  color: white;
+}
+
+.project.success {
+  background-color: rgb(16, 151, 83);
+  color: white;
+}
+
+.project.failed {
+  background-color: rgb(186, 26, 26);
+  color: white;
+}
+
+.project.stopping {
+  background-color: rgb(161, 161, 161);
+  color: #535353;
+}
+
+.project.stopped {
+  background-color: rgb(198, 198, 198);
+  color: #a1a1a1;
+}
