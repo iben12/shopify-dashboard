@@ -28,7 +28,7 @@ getStatuses();
 
 setInterval(function() {
     getStatuses();
-}, 20 * 1000);
+}, 10 * 1000);
 
 setInterval(function() {
     refreshRabbit();
