@@ -108,7 +108,9 @@ iframe {
 }
 
 .project.testing {
-  background-color: rgb(24, 125, 196);
+  background-image: url(/cat.gif);
+  background-size: cover;
+  background-position: center top;
   color: white;
 }
 
@@ -117,7 +119,7 @@ iframe {
   color: white;
 }
 
-.project.failed {
+.project.failed, .project.error {
   background-color: rgb(186, 26, 26);
   color: white;
 }

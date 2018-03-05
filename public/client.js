@@ -9,7 +9,8 @@ function getStatuses() {
         for (let project of response.data) {
             let parent = document.getElementById(project.name)
             parent.className = `project ${project.status}`;
-            parent.querySelector('span').innerText = project.status;
+            parent.querySelector('span.statusline').innerText = project.status;
+            parent.querySelector('span.username').innerText = '@' + project.username;
         }
     }).catch(function(error) {
         console.log(error);
