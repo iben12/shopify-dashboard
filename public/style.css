@@ -88,6 +88,7 @@ iframe {
 
 .codeship .project {
   position: relative;
+  box-sizing: border-box;
   flex-grow: 0;
   flex-basis: 33%;
   display: flex;
