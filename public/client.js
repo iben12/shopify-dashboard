@@ -11,6 +11,7 @@ function getStatuses() {
             parent.className = `project ${project.status}`;
             parent.querySelector('span.statusline').innerText = project.status;
             parent.querySelector('span.username').innerText = '@' + project.username;
+            parent.querySelector('span.commit').innerText = project.commit;
         }
     }).catch(function(error) {
         console.log(error);

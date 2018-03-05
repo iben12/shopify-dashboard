@@ -87,20 +87,23 @@ iframe {
 }
 
 .codeship .project {
+  position: relative;
   flex-grow: 0;
   flex-basis: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
   background-color: rgb(198, 198, 198);
+  background-repeat: no-repeat;
   color: #a1a1a1;
+  padding: 1rem;
 }
 
 .codeship .project h2 {
   font-size: 2rem;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .codeship .project span {
@@ -108,9 +111,34 @@ iframe {
   margin: .5rem;
 }
 
+.codeship .project:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  content: '';
+}
+
+.codeship .project .statusline {
+  text-transform: uppercase;
+}
+
+.codeship .project .commit {
+  text-align: center;
+  font-size: 1rem;
+}
+
 .project.waiting {
+  background-image: url(/happy.gif);
+  background-size: cover;
+  background-position: center top;
+  color: white;
+}
+
+.project.waiting:before {
   background-color: rgb(165, 234, 255);
-  color: #114674;
 }
 
 .project.testing {
@@ -120,9 +148,17 @@ iframe {
   color: white;
 }
 
+.project.testing:before {
+  background-color: rgb(0, 146, 204);
+}
+
 .project.success {
   background-color: rgb(16, 151, 83);
   color: white;
+}
+
+.project.success:before {
+  background-color: rgb(16, 151, 83);
 }
 
 .project.failed, .project.error {
@@ -132,12 +168,17 @@ iframe {
   color: white;
 }
 
-.project.stopping {
-  background-color: rgb(161, 161, 161);
-  color: #535353;
+.project.failed:before, .project.error:before {
+  background-color: rgb(224, 46, 1);
 }
 
-.project.stopped {
-  background-color: rgb(198, 198, 198);
-  color: #a1a1a1;
+.project.stopping, .project.stopped {
+  background-image: url(/stop.gif);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.project.stopping:before, .project.stopped:before {
+  background-color: rgb(240, 204, 0);
 }
