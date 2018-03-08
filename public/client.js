@@ -20,8 +20,10 @@ function getStatuses() {
 }
 
 function refreshRabbit() {
-    let rabbitIframe = document.getElementById("rabbitiframe");
-    rabbitIframe.contentWindow.location(reload);
+    const rabbitIframe = document.getElementById("rabbitiframe");
+    const url = rabbitIframe.src;
+    rabbitIframe.src = '';
+    rabbitIframe = url;
 }
 
 getStatuses();
