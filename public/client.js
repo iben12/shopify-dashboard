@@ -23,7 +23,7 @@ function refreshRabbit() {
     const rabbitIframe = document.getElementById("rabbitiframe");
     const url = rabbitIframe.src;
     rabbitIframe.src = '';
-    rabbitIframe = url;
+    rabbitIframe.src = url;
 }
 
 getStatuses();
