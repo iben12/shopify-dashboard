@@ -44,9 +44,9 @@ iframe {
 }
 
 .rabbit iframe {
-  transform: scale(0.6);
-  width: 167%;
-  height: 160%;
+  transform: scale(0.9);
+  width: 112%;
+  height: 112%;
 }
 
 .librato {
