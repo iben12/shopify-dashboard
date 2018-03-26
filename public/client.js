@@ -19,19 +19,9 @@ function getStatuses() {
     });
 }
 
-function refreshRabbit() {
-    const rabbitIframe = document.getElementById("rabbitiframe");
-    const url = rabbitIframe.src;
-    rabbitIframe.src = '';
-    rabbitIframe.src = url;
-}
 
 getStatuses();
 
 setInterval(function() {
     getStatuses();
 }, 10 * 1000);
-
-setInterval(function() {
-    refreshRabbit();
-}, 30 * 60 * 1000);

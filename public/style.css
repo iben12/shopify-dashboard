@@ -43,6 +43,12 @@ iframe {
   background: white;
 }
 
+.rabbit iframe {
+  transform: scale(0.6);
+  width: 167%;
+  height: 160%;
+}
+
 .librato {
   grid-column: 4 / 8;
   grid-row: 6 / 11;
