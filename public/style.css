@@ -60,24 +60,31 @@ iframe {
   height: 167%;
 }
 
+.cdd iframe {
+  transform: scale(0.7);
+  width: 143%;
+  height: 149%;
+}
+
 .cdd {
   grid-column: 8 / 11;
-  grid-row: 8 / 11;
+  grid-row: 9 / 11;
 }
 
 .codeship {
   background: none;
   grid-column: 8 /11;
-  grid-row: 6 / 8;
+  grid-row: 6 / 9;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .codeship .status {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
   flex-grow: 1;
+  flex-direction: row;
 }
 
 .codeship .title {
@@ -93,6 +100,7 @@ iframe {
 }
 
 .codeship .project {
+  border: 1px black solid;
   position: relative;
   box-sizing: border-box;
   flex-grow: 0;
@@ -104,11 +112,10 @@ iframe {
   background-color: rgb(198, 198, 198);
   background-repeat: no-repeat;
   color: #a1a1a1;
-  padding: 1rem;
 }
 
 .codeship .project h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
   text-transform: uppercase;
 }
