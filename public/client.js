@@ -19,9 +19,20 @@ function getStatuses() {
     });
 }
 
+let currentView = 'first';
+
+function switchView() {
+    const switchTo = currentView === 'first' ? 'second' : 'first';
+    document.getElementById(switchTo).scrollIntoView({ behavior: 'smooth' });
+    currentView = switchTo;
+}
 
 getStatuses();
 
 setInterval(function() {
     getStatuses();
 }, 10 * 1000);
+
+setInterval(function() {
+    switchView();
+}, 20 * 1000);
