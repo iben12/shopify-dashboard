@@ -36,9 +36,15 @@ iframe {
   transform-origin: 0 0;
 }
 
-.kibana {
+.kibana, .pipeline {
   grid-column: 1 / 11;
   grid-row: 1 / 11;
+}
+
+.pipeline iframe {
+  transform: scale(2);
+  width: 50%;
+  height: 50%;
 }
 
 .rabbit {
