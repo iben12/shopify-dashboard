@@ -37,4 +37,4 @@ setInterval(function() {
 
 setInterval(function() {
     switchView();
-}, 5 * 1000);
+}, 20 * 1000);
