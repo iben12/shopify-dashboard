@@ -128,6 +128,7 @@ iframe {
   font-size: 1.8rem;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .codeship .project span {
