@@ -61,7 +61,7 @@ iframe {
 
 .librato {
   grid-column: 4 / 8;
-  grid-row: 1 / 11;
+  grid-row: 1 / 7;
 }
 
 /* .librato iframe {
@@ -70,14 +70,14 @@ iframe {
   height: 167%;
 } */
 
-.cdd iframe {
+/* .cdd iframe {
   transform: scale(0.7);
   width: 143%;
   height: 149%;
-}
+} */
 
 .cdd {
-  grid-column: 8 / 11;
+  grid-column: 1 / 8;
   grid-row: 7 / 11;
 }
 
